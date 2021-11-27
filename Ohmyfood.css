@@ -123,4 +123,58 @@ li::before {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
+
+.restaurant-main {
+  margin-top: 4rem;
+  background-color: #fafafa;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrarp;
+      flex-wrap: wrarp;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+.restaurant-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px #0000007a;
+          box-shadow: 0px 0px 10px #0000007a;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.img-restaurant {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #000;
+}
 /*# sourceMappingURL=Ohmyfood.css.map */
