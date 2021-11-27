@@ -88,6 +88,26 @@ button:hover {
   }
 }
 
+ol {
+  list-style-type: none;
+  counter-reset: section;
+}
+
+li::before {
+  counter-increment: section;
+  content: counter(section);
+  color: #fff;
+  background-color: #9356DC;
+  padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+  border-radius: 50%;
+  margin-left: -2.1rem;
+  margin-right: 2rem;
+}
+
+.function-tools .fas {
+  color: #7e7e7e;
+}
+
 .function-tools li {
   background-color: #f3f3f3;
   padding: 1rem 2rem;
