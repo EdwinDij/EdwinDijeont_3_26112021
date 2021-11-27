@@ -80,7 +80,7 @@ ol
     list-style-type: none
     counter-reset: section
 
-li::before
+li .fas::before
     counter-increment: section
     content: counter(section)
     color: #fff
@@ -179,3 +179,15 @@ div .fas
 div .fas:hover
     opacity: 1
     transition-duration: 0.5s
+
+        //////*** FOOTTER ***///////
+
+.logo-footer
+    font-family: shrikhand, sans-serif
+    
+.info
+    background-color: #353535
+    color: #fff
+    padding: 2rem 0 0 2rem
+    @media (min-width: 850px)
+        text-align: center
