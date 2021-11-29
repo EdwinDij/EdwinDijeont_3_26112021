@@ -40,8 +40,12 @@ header
     border-radius: 1rem 1rem 0 0
     padding: 1.5rem
 
-
-
+.wrapper-menu
+    @media (min-width:64rem)
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        column-gap: 2rem
+        
 .restaurant-name
     font-family: shrikhand, sans-serif
     padding: 2rem 1rem 2rem 1rem
