@@ -72,24 +72,26 @@ header
     box-sizing: border-box
     border-radius: 1rem
     margin-bottom: 1rem
+    overflow: hidden
+
+  
 
 .menu
     display: flex
     align-items: end
-    cursor: pointer
-    overflow: hidden
-    
+
 .menu:hover
-    overflow: visible
     margin-right: 5.5rem
     transition-duration: 0.5s
+    overflow: visible
     &:hover
         .checkback
             transform: rotate(360deg)
             transition-duration: 0.8s
 
 .menu-description
-    padding: 1rem
+    padding: 1rem 0 1rem 1rem
+    overflow: hidden
 
 .price
     margin-left: auto
@@ -101,12 +103,12 @@ header
 
 h4
     margin: 0
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
 p
     margin: 0
-    
-
-.submenu
-    white-space: inherit
+    white-space: nowrap
     text-overflow: ellipsis
     overflow: hidden
     
@@ -115,7 +117,6 @@ p
     padding: 1.5rem
     margin-right: -5.5rem
     border-radius: 0 1rem 1rem 0
-
 
 .fa-check
     color: #99E2D0
