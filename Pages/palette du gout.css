@@ -46,6 +46,7 @@ header {
 .meal-zone {
   background-color: #f3f3f3;
   border-radius: 1rem 1rem 0 0;
+  padding: 1.5rem;
 }
 
 .restaurant-name {
@@ -98,13 +99,20 @@ header {
 
 .menu:hover {
   overflow: visible;
-  margin-right: 4.5rem;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  margin-right: 5.5rem;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.menu:hover:hover .checkback {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 .menu-description {
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  padding: 1rem;
 }
 
 .price {
@@ -139,13 +147,28 @@ p {
 .checkmark {
   background-color: #99E2D0;
   padding: 1.5rem;
-  margin-right: -4.5rem;
+  margin-right: -5.5rem;
   border-radius: 0 1rem 1rem 0;
+}
+
+.fa-check {
+  color: #99E2D0;
 }
 
 .checkback {
   background-color: #fff;
+  padding: 0.2rem;
   border-radius: 50%;
+  padding: 0.5rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.order {
+  color: #fff;
+  font-weight: bold;
 }
 
 .logo-footer {
@@ -182,5 +205,20 @@ button:hover {
   color: #fff;
   padding: 2rem 0 0 2rem;
   text-align: center;
+}
+
+.delay0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 /*# sourceMappingURL=palette du gout.css.map */
