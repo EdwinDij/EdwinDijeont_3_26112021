@@ -73,4 +73,64 @@ header {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
+
+.service-menu {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px #0000007a;
+          box-shadow: 0px 0px 10px #0000007a;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu-description {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  white-space: nowrap;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.price {
+  margin-left: auto;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 3rem;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.checkmark {
+  background-color: #99E2D0;
+  padding: 1.5rem;
+  margin-right: -4rem;
+  border-radius: 0 1rem 1rem 0;
+  overflow: hidden;
+}
+
+.checkmark:hover {
+  margin-right: 0;
+}
 /*# sourceMappingURL=palette du gout.css.map */
