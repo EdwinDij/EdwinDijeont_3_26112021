@@ -152,6 +152,16 @@ li .fas::before
     right: 20px
     padding: 5px
     border-radius: 0.2rem
+    animation-name: blink
+    animation-duration: 2s
+    animation-iteration-count: infinite
+    @keyframes blink
+        0%
+            opacity: 1
+
+        100%
+            opacity: 0
+            
 
 .title-card
     margin-bottom: 0
