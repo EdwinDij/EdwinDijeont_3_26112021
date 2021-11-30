@@ -201,6 +201,30 @@ li .fas::before {
   right: 20px;
   padding: 5px;
   border-radius: 0.2rem;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .title-card {
