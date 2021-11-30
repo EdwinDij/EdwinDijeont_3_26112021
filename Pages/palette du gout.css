@@ -41,23 +41,16 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: -1rem;
+  height: 100%;
 }
 
 .meal-zone {
   background-color: #f3f3f3;
-  border-radius: 1rem 1rem 0 0;
-  padding: 1.5rem;
-}
-
-@media (min-width: 64rem) {
-  .wrapper-menu {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
-  }
+  border-radius: 1.5rem;
+  margin: -5rem 0 0 0rem;
+  padding: 0 1rem 0 1rem;
+  z-index: 1;
+  position: relative;
 }
 
 .restaurant-name {
@@ -86,16 +79,50 @@ header {
           transition-duration: 0.5s;
 }
 
+.wrapper-menu {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 64rem) {
+  .wrapper-menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
+.meal {
+  overflow: hidden;
+}
+
+.service {
+  text-transform: uppercase;
+}
+
+.service::after {
+  content: "";
+  height: 0.25rem;
+  width: 2.25rem;
+  background-color: #99E2D0;
+  display: block;
+}
+
 .service-menu {
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 10px #0000007a;
-          box-shadow: 0px 0px 10px #0000007a;
+  -webkit-box-shadow: 0px 1px 4px #0000007a;
+          box-shadow: 0px 1px 4px #0000007a;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 1rem;
   margin-bottom: 1rem;
   overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .menu {
