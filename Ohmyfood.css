@@ -1,7 +1,7 @@
 a {
   text-decoration: none;
   -webkit-text-decoration-style: none;
-          text-decoration-style: none;
+  text-decoration-style: none;
   color: inherit;
 }
 
@@ -20,7 +20,7 @@ main {
   margin-top: 0;
   padding: 1rem;
   -webkit-box-shadow: 0px 5px 3px lightgrey;
-          box-shadow: 0px 5px 3px lightgrey;
+  box-shadow: 0px 5px 3px lightgrey;
 }
 
 .location {
@@ -52,8 +52,14 @@ main {
 }
 
 button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  background: linear-gradient(#ff79da, #9356dc);
   width: 15rem;
   height: 3.2rem;
   border-radius: 1.5rem;
@@ -83,19 +89,21 @@ button:hover {
   .function-tools {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    margin: 1rem;
   }
 }
 
 @media (min-width: 700px) {
   .function-tools {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 }
 
@@ -108,7 +116,7 @@ li .fas::before {
   counter-increment: section;
   content: counter(section);
   color: #fff;
-  background-color: #9356DC;
+  background-color: #9356dc;
   padding: 0.3rem 0.4rem 0.3rem 0.4rem;
   border-radius: 50%;
   margin-left: -2.1rem;
@@ -125,15 +133,15 @@ li .fas::before {
   padding: 1rem 2rem;
   border-radius: 1.5rem;
   -webkit-box-shadow: 3px 3px 10px #dedada;
-          box-shadow: 3px 3px 10px #dedada;
+  box-shadow: 3px 3px 10px #dedada;
   cursor: pointer;
 }
 
 .function-tools li:hover {
   background: #fcb8e9;
-  background: linear-gradient #9356DC;
+  background: linear-gradient #9356dc;
   -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .restaurant-main {
@@ -147,8 +155,8 @@ li .fas::before {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -156,10 +164,10 @@ li .fas::before {
   .card {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 2rem;
-            column-gap: 2rem;
+    column-gap: 2rem;
     row-gap: 2rem;
   }
 }
@@ -167,19 +175,19 @@ li .fas::before {
 .restaurant-card {
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 10px #0000007a;
-          box-shadow: 0px 0px 10px #0000007a;
+  box-shadow: 0px 0px 10px #0000007a;
   background-size: cover;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 1rem;
   position: relative;
 }
 
 .restaurant-card:hover {
   -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
   -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }
 
 .img-restaurant {
@@ -187,9 +195,9 @@ li .fas::before {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .new {
@@ -202,11 +210,11 @@ li .fas::before {
   padding: 5px;
   border-radius: 0.2rem;
   -webkit-animation-name: blink;
-          animation-name: blink;
+  animation-name: blink;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes blink {
@@ -247,8 +255,14 @@ li .fas::before {
 
 div .fas {
   color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -257,7 +271,7 @@ div .fas {
 div .fas:hover {
   opacity: 1;
   -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .logo-footer {
@@ -281,11 +295,11 @@ div .fas:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #fff;
   height: 100vh;
   position: fixed;
@@ -293,13 +307,13 @@ div .fas:hover {
   inset: 0;
   opacity: 0.7;
   -webkit-animation: disappear 3s 2s both;
-          animation: disappear 3s 2s both;
+  animation: disappear 3s 2s both;
 }
 
 @-webkit-keyframes disappear {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     visibility: hidden;
@@ -309,7 +323,7 @@ div .fas:hover {
 @keyframes disappear {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     visibility: hidden;
@@ -317,70 +331,70 @@ div .fas:hover {
 }
 
 .purple {
-  background-color: #9356DC;
+  background-color: #9356dc;
   width: 30px;
   height: 30px;
   -webkit-animation: size 0.7s both infinite;
-          animation: size 0.7s both infinite;
+  animation: size 0.7s both infinite;
 }
 
 @-webkit-keyframes size {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes size {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 .green {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 30px;
   height: 30px;
   -webkit-animation: size 0.89s both infinite;
-          animation: size 0.89s both infinite;
+  animation: size 0.89s both infinite;
 }
 
 @keyframes size {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 .pink {
-  background-color: #FF79DA;
+  background-color: #ff79da;
   width: 30px;
   height: 30px;
   -webkit-animation: size 1s both infinite;
-          animation: size 1s both infinite;
+  animation: size 1s both infinite;
 }
 
 @keyframes size {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=Ohmyfood.css.map */
