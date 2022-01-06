@@ -275,4 +275,112 @@ div .fas:hover {
     text-align: center;
   }
 }
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  inset: 0;
+  opacity: 0.7;
+  -webkit-animation: disappear 3s 2s both;
+          animation: disappear 3s 2s both;
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.purple {
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: size 0.7s both infinite;
+          animation: size 0.7s both infinite;
+}
+
+@-webkit-keyframes size {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes size {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.green {
+  background-color: #99E2D0;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: size 0.89s both infinite;
+          animation: size 0.89s both infinite;
+}
+
+@keyframes size {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.pink {
+  background-color: #FF79DA;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: size 1s both infinite;
+          animation: size 1s both infinite;
+}
+
+@keyframes size {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /*# sourceMappingURL=Ohmyfood.css.map */
