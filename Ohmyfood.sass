@@ -58,8 +58,12 @@ button:hover
     opacity: 0.9
 
     ///////*** FUNCTION ***///////
-
+.functionpage
+        margin: 3rem 0 4rem 0
+        
 .title-function
+    @media( max-width: 699px )
+        padding-left: 1rem        
     @media (min-width: 700px)
         text-align: center
 .function-tools
@@ -82,10 +86,12 @@ ol
     content: counter(section)
     color: #fff
     background-color: #9356DC 
-    padding: 0.3rem 0.4rem 0.3rem 0.4rem
-    border-radius: 50%
-    margin-left: -2.1rem
+    padding: 0.2rem 0.4rem
+    margin-left: -2.4rem
     margin-right: 2rem
+    border-radius: 50%
+    font-style: initial
+    font-size: medium
 
 .function-tools .list-icon
     color: #7e7e7e
@@ -93,10 +99,15 @@ ol
 
 .function-tools li
     background-color: #f3f3f3
-    padding: 1rem 2rem
+    padding: 0rem 2rem
     border-radius: 1.5rem
     box-shadow: 3px 3px 10px #dedada
     cursor: pointer
+    display: flex
+    text-align: center
+    align-items: center
+    height: 4rem
+    font-weight: bold
 
 
 .function-tools li:hover
@@ -133,7 +144,7 @@ ol
     transition-duration: 0.1s
 
 .img-restaurant
-    height: 13rem
+    height: 12rem
     width: 100%
     border-radius: 1rem 1rem 0 0
     box-shadow: none
@@ -160,8 +171,8 @@ ol
             
 
 .title-card
-    margin-bottom: 0
-    margin-left: 1rem
+    font-weight: bold
+    margin: 1rem 0 0.2rem 1rem
 
 .city
     margin-top: 3px
