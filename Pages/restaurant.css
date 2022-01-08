@@ -30,7 +30,7 @@ header {
 .fa-arrow-left {
   position: absolute;
   top: 18px;
-  left: 100px;
+  padding-left: 2%;
   font-size: 40px;
 }
 
@@ -55,7 +55,8 @@ header {
 
 .restaurant-name {
   font-family: shrikhand, sans-serif;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem 1rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 .fa-heart {
@@ -107,14 +108,14 @@ header {
 .service::after {
   content: "";
   height: 0.25rem;
-  width: 2.25rem;
+  width: 3.8rem;
   background-color: #99E2D0;
   display: block;
 }
 
 .service-menu {
-  -webkit-box-shadow: 0px 1px 4px #0000007a;
-          box-shadow: 0px 1px 4px #0000007a;
+  -webkit-box-shadow: 1px 2px 10px lightgrey;
+          box-shadow: 1px 2px 10px lightgrey;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -222,12 +223,14 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   width: 15rem;
-  height: 3.2rem;
-  border-radius: 1.5rem;
+  height: 3.5rem;
+  border-radius: 2.5rem;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   margin: 2.5rem 0 3.2rem 0;
+  -webkit-box-shadow: 2px 5px 10px lightgrey;
+          box-shadow: 2px 5px 10px lightgrey;
 }
 
 .button {
@@ -241,8 +244,13 @@ button:hover {
 .info {
   background-color: #353535;
   color: #fff;
-  padding: 2rem 0 0 2rem;
-  text-align: center;
+  padding: 0.5rem 0 0 2rem;
+}
+
+@media (min-width: 850px) {
+  .info {
+    text-align: center;
+  }
 }
 
 .delay0 {
