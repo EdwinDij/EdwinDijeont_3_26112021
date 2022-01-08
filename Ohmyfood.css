@@ -181,6 +181,12 @@ ol {
   padding: 2rem 1.5rem 3rem 1.5rem;
 }
 
+@media (min-width: 64rem) {
+  .restaurant-main {
+    padding: 3rem 6rem 3rem 6rem;
+  }
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
