@@ -362,10 +362,8 @@ ol {
   }
 }
 
-.purple {
-  background-color: #9356DC;
-  width: 30px;
-  height: 30px;
+.utensils-animation {
+  color: #9356DC;
   -webkit-animation: size 0.7s both infinite;
           animation: size 0.7s both infinite;
 }
@@ -392,10 +390,8 @@ ol {
   }
 }
 
-.green {
-  background-color: #99E2D0;
-  width: 30px;
-  height: 30px;
+.hamb-animation {
+  color: #99E2D0;
   -webkit-animation: size 0.89s both infinite;
           animation: size 0.89s both infinite;
 }
@@ -411,10 +407,8 @@ ol {
   }
 }
 
-.pink {
-  background-color: #FF79DA;
-  width: 30px;
-  height: 30px;
+.drumstick-animation {
+  color: #FF79DA;
   -webkit-animation: size 1s both infinite;
           animation: size 1s both infinite;
 }
