@@ -364,6 +364,7 @@ ol {
 
 .utensils-animation {
   color: #9356DC;
+  font-size: 5rem;
   -webkit-animation: size 0.7s both infinite;
           animation: size 0.7s both infinite;
 }
@@ -392,6 +393,7 @@ ol {
 
 .hamb-animation {
   color: #99E2D0;
+  font-size: 5rem;
   -webkit-animation: size 0.89s both infinite;
           animation: size 0.89s both infinite;
 }
@@ -409,6 +411,7 @@ ol {
 
 .drumstick-animation {
   color: #FF79DA;
+  font-size: 5rem;
   -webkit-animation: size 1s both infinite;
           animation: size 1s both infinite;
 }
