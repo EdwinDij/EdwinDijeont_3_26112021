@@ -7,9 +7,6 @@ a {
 
 body {
   margin: 0;
-}
-
-main {
   font-family: Roboto, sans-serif;
   font-size: 1.2rem;
 }
@@ -23,6 +20,7 @@ main {
   text-align: center;
   font-family: Shrikhand, sans-serif;
   margin-top: 0;
+  font-size: 2rem;
   padding: 1rem;
   -webkit-box-shadow: 0px 5px 3px lightgrey;
           box-shadow: 0px 5px 3px lightgrey;
@@ -362,10 +360,9 @@ ol {
   }
 }
 
-.purple {
-  background-color: #9356DC;
-  width: 30px;
-  height: 30px;
+.utensils-animation {
+  color: #9356DC;
+  font-size: 5rem;
   -webkit-animation: size 0.7s both infinite;
           animation: size 0.7s both infinite;
 }
@@ -392,10 +389,9 @@ ol {
   }
 }
 
-.green {
-  background-color: #99E2D0;
-  width: 30px;
-  height: 30px;
+.hamb-animation {
+  color: #99E2D0;
+  font-size: 5rem;
   -webkit-animation: size 0.89s both infinite;
           animation: size 0.89s both infinite;
 }
@@ -411,10 +407,9 @@ ol {
   }
 }
 
-.pink {
-  background-color: #FF79DA;
-  width: 30px;
-  height: 30px;
+.drumstick-animation {
+  color: #FF79DA;
+  font-size: 5rem;
   -webkit-animation: size 1s both infinite;
           animation: size 1s both infinite;
 }
