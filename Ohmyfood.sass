@@ -1,4 +1,5 @@
 @import "mixins.scss"
+@import "animation.scss"
 
 $primary-color: #f3f3f3
 $secondary-color: #fafafa
@@ -97,7 +98,7 @@ ol
     font-size: medium
 
 .list-function:hover
-    background: #fcb8e9
+    background: $third-color
     background: linear-gradient (#9356DC)
     transition-duration: 0.5s
 
@@ -227,7 +228,7 @@ ol
     animation: disappear 3s 2s both
     @keyframes disappear
         0%
-            transform: scale(1)
+            visibility: 100%
             
         100%
             visibility: hidden
@@ -235,34 +236,16 @@ ol
 .utensils-animation
     color: #9356DC 
     font-size: 5rem
-    animation: size 0.7s both infinite
-    @keyframes size
-        0%
-            transform: rotate(0deg)
-
-        100%
-            transform: rotate(360deg)
-
-
+    @include animation-loader1
+    
 .hamb-animation
     color: #99E2D0
     font-size: 5rem
-    animation: size 0.89s both infinite 
-    @keyframes size
-        0%
-            transform: rotate(0deg)
-
-        100%
-            transform: rotate(360deg)
-
+    @include animation-loader2
+    
 .drumstick-animation
     color: #FF79DA
     font-size: 5rem
-    animation: size 1s both infinite 
-    @keyframes size
-        0%
-            transform: rotate(0deg)
-
-        100%
-            transform: rotate(360deg)
+    @include animation-loader3
+    
          

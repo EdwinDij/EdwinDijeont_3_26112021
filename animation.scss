@@ -1,0 +1,37 @@
+@mixin animation-loader1 {
+    animation: rotate 0.7s both infinite;
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@mixin animation-loader2 {
+    animation: rotate 0.89s both infinite;
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg)
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@mixin animation-loader3 {
+    animation: rotate 1s both infinite;
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+}
