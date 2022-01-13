@@ -36,12 +36,13 @@
     }
 }
 
-@mixin food-animation{
-    @for $i from 1 through 10 {
-        &--service-menu--#{$i} {
-                animation: appear 1s .1s*$i;
-                animation-fill-mode: forwards;
-        }
+@keyframes Appear{
+0% {
+    transform: translateY(50%);
+    opacity: 0;
+}
+100%{
+    transform: translateY(0);
+    opacity: 1;
     }
-
 }
