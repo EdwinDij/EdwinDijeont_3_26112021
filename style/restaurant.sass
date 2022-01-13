@@ -3,25 +3,27 @@
 
 body
     margin: 0
+    font-family: Roboto, sans-serif
+    font-size: 1.2rem
 
 a
     text-decoration: none
     text-decoration-style: none
     color: inherit
 
-main
-    font-family: Roboto, sans-serif
-    font-size: 1.2rem
-
 .logo
-    @include logo-style
+    text-align: center
+    font-family: Shrikhand, sans-serif
+    margin-top: 0
+    font-size: 2rem
+    padding: 1rem
 
 header
     position: relative
 
 .fa-arrow-left
     position: absolute
-    top: 18px
+    top: 26px
     padding-left: 2%
     font-size: 25px
 
@@ -47,6 +49,7 @@ header
     font-family: shrikhand, sans-serif
     padding: 2rem 1rem 0 0rem
     margin-bottom: 1rem
+    font-weight: 100
 
 .fa-heart
     padding-top: 0.5rem
@@ -83,6 +86,7 @@ header
     &::after
        content: ""
        height: 0.25rem
+       margin-top: 0.4rem
        width: 3.8rem
        background-color: #99E2D0
        display: block       
@@ -112,16 +116,15 @@ header
             transition-duration: 0.8s
 
 .menu-description
-    padding: 1rem 0 1rem 1rem
+    padding: 1.2rem 0 1.2rem 1rem
     overflow: hidden
 
 .price
-    margin-left: auto
     font-weight: bold
     display: flex
     justify-content: flex-end
     align-items: flex-end
-    margin-right: 1rem
+    margin: 0 2rem 1.2rem auto 
 
 h4
     margin: 0
@@ -185,7 +188,10 @@ button:hover
 .info
     background-color: #353535
     color: #fff
-    padding: 0.5rem 0 0 2rem
+    padding: 0.5rem 0 1rem 2rem
+    display: flex
+    flex-direction: column
+    row-gap: 1rem
     @media (min-width:850px)
         text-align: center
  
