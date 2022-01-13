@@ -35,3 +35,13 @@
         }
     }
 }
+
+@mixin food-animation{
+    @for $i from 1 through 10 {
+        &--service-menu--#{$i} {
+                animation: appear 1s .1s*$i;
+                animation-fill-mode: forwards;
+        }
+    }
+
+}
