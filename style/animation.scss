@@ -46,3 +46,13 @@
     opacity: 1;
     }
 }
+@mixin screen-loader {
+    @keyframes disappear{
+        0%{
+            visibility: 100%;
+        }   
+        100%{
+            visibility: hidden;
+        }
+}
+}

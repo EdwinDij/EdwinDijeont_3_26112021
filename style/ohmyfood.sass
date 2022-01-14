@@ -50,7 +50,7 @@ body
 
 .subtitle
     margin-bottom: 2rem
-    
+
 .more
     color: #fff
     font-weight: bold
@@ -63,16 +63,16 @@ button:hover
 
     ///////*** FUNCTION ***///////
 .functionpage
-        margin: 3rem 0 4rem 0
-        
+    margin: 3rem 0 4rem 0
+
 .title-function
     @media( max-width: 699px )
-        padding-left: 1rem        
+        padding-left: 1rem
     @media (min-width: 700px)
         text-align: center
 .function-tools
     display: flex
-    gap: 2rem 
+    gap: 2rem
     @media (max-width: 990px)
         flex-direction: column
         padding: 0
@@ -89,7 +89,7 @@ ol
     counter-increment: section
     content: counter(section)
     color: #fff
-    background-color: #9356DC 
+    background-color: #9356DC
     padding: 0.2rem 0.4rem
     margin-left: -2.4rem
     margin-right: 2rem
@@ -124,7 +124,7 @@ ol
     padding: 2rem 1.5rem 3rem 1.5rem
     @media (min-width: 64rem)
         padding: 3rem 6rem 3rem 6rem
-    
+
 .card
     display: flex
     flex-direction: column
@@ -136,12 +136,12 @@ ol
         row-gap: 2rem
 
 .restaurant-card
-        background-color: #fff
-        box-shadow: 3px 3px 10px #dedada
-        background-size: cover
-        box-sizing: border-box
-        border-radius: 1rem
-        position: relative
+    background-color: #fff
+    box-shadow: 3px 3px 10px #dedada
+    background-size: cover
+    box-sizing: border-box
+    border-radius: 1rem
+    position: relative
 
 .restaurant-card:hover
     transform: scale(1.02)
@@ -172,7 +172,6 @@ ol
 
         100%
             opacity: 0
-            
 
 .title-card
     font-weight: bold
@@ -182,13 +181,12 @@ ol
     margin-top: 3px
     margin-left: 1rem
     margin-bottom: 0
-    padding-bottom: 0.7rem 
+    padding-bottom: 0.7rem
 
 .fa-heart
     position: absolute
     right: 30px
     bottom: 20px
-    
 
 .heart-visible
     color: transparent
@@ -205,47 +203,45 @@ ol
 
 .logo-footer
     font-family: shrikhand, sans-serif
-    
+
 .info
     background-color: #353535
     color: #fff
     padding: 0.5rem 0 1rem 2rem
+    display: flex
+    flex-direction: column
+    row-gap: 1rem
     @media (min-width:850px)
         text-align: center
 
+.icon-footer
+    margin-right: 1rem
     ///////// *** animation ***/////////
 
 .loader
     display: flex
     align-items: center
     justify-content: center
-    background-color:#fff
+    background-color: #fff
     height: 100vh
-    position: fixed 
+    position: fixed
     z-index: 1
     inset: 0
     opacity: 0.7
     animation: disappear 3s 2s both
-    @keyframes disappear
-        0%
-            visibility: 100%
-            
-        100%
-            visibility: hidden
+    @include screen-loader
 
 .utensils-animation
-    color: #9356DC 
+    color: #9356DC
     font-size: 5rem
     @include animation-loader1
-    
+
 .hamb-animation
     color: #99E2D0
     font-size: 5rem
     @include animation-loader2
-    
+
 .drumstick-animation
     color: #FF79DA
     font-size: 5rem
     @include animation-loader3
-    
-         
