@@ -33,6 +33,32 @@ body
     @media (min-width: 700px)
         text-align: right
 
+    ///////*** Main zone ***/////////
+
+.titlezone
+    background-color: $secondary-color
+    padding: 1rem 1rem 4rem
+
+.title
+    text-align: center
+
+.title-explain
+    font-size: 1.79rem
+    margin-bottom: 0.8rem
+
+.subtitle
+    margin-bottom: 2rem
+
+.more
+    color: #fff
+    font-weight: bold
+
+button
+    @include button-style
+
+button:hover
+    opacity: 0.9
+
     ///////*** FUNCTION ***///////
 .functionpage
     margin: 3rem 0 4rem 0
@@ -138,6 +164,7 @@ ol
     animation-name: blink
     animation-duration: 2s
     animation-iteration-count: infinite
+    @include new-blink
 
 
 .title-card
