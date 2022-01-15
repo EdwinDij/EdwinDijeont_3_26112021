@@ -279,24 +279,6 @@ ol {
           animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .title-card {
   font-weight: bold;
   margin: 1rem 0 0.2rem 1rem;
@@ -460,4 +442,4 @@ ol {
             transform: rotate(360deg);
   }
 }
-/*# sourceMappingURL=ohmyfood.css.map */
+/*# sourceMappingURL=Ohmyfood.css.map */

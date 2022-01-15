@@ -1,10 +1,6 @@
-@import mixins.scss
-@import animation.scss
-
-$primary-color: #f3f3f3
-$secondary-color: #fafafa
-$third-color: #fcb8e9
-
+@import utile/mixins.scss
+@import utile/animation.scss
+@import utile/color.scss
 a
     text-decoration: none
     text-decoration-style: none
@@ -166,12 +162,7 @@ ol
     animation-name: blink
     animation-duration: 2s
     animation-iteration-count: infinite
-    @keyframes blink
-        0%
-            opacity: 1
 
-        100%
-            opacity: 0
 
 .title-card
     font-weight: bold

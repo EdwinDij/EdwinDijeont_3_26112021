@@ -46,6 +46,7 @@
     opacity: 1;
     }
 }
+
 @mixin screen-loader {
     @keyframes disappear{
         0%{
@@ -54,5 +55,17 @@
         100%{
             visibility: hidden;
         }
+}
+}
+
+@mixin new-blink {
+    @keyframes blink{
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 }
