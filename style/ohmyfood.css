@@ -99,12 +99,14 @@ button {
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  -webkit-box-shadow: 5px 5px 10px lightgrey;
-          box-shadow: 5px 5px 10px lightgrey;
+  -webkit-box-shadow: 5px 5px 4px darkgrey;
+          box-shadow: 5px 5px 4px darkgrey;
 }
 
 button:hover {
-  opacity: 0.9;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0.7;
 }
 
 .functionpage {
@@ -162,23 +164,36 @@ ol {
   content: counter(section);
   color: #fff;
   background-color: #9356DC;
-  padding: 0.2rem 0.4rem;
   margin-left: -2.4rem;
   margin-right: 2rem;
   border-radius: 50%;
   font-style: initial;
   font-size: medium;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list-function:hover {
   background: #fcb8e9;
-  background: linear-gradient #9356DC;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  color: #9356DC;
+}
+
+span {
+  color: black;
 }
 
 .list-icon {
-  color: #7e7e7e;
   margin-right: 0.7rem;
 }
 
@@ -317,17 +332,29 @@ ol {
 
 .heart-visible {
   color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
   opacity: 0;
 }
 
 .heart-visible:hover {
   opacity: 1;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  cursor: pointer;
+}
+
+.heart-visible:active {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  cursor: pointer;
 }
 
 ul {

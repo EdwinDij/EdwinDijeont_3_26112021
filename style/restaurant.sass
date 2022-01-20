@@ -1,6 +1,6 @@
-@import utile/animation.scss
-@import utile/mixins.scss
-@import utile/color.scss
+@import "utile/animation.scss"
+@import "utile/mixins.scss"
+@import "utile/color.scss"
 
 body
     margin: 0
@@ -60,16 +60,18 @@ header
     position: absolute
     right: 30px
 
-.restaurant-name .fas
+.heart-visible
     color: transparent
-    background: linear-gradient($gradient)
-    background-clip: text
-    -webkit-background-clip: text
     opacity: 0
 
-.restaurant-name .fas:hover
+.heart-visible:hover
     opacity: 1
     transition-duration: 0.5s
+    background: linear-gradient(#FF79DA,#9356DC)
+    background-clip: text
+    -webkit-background-clip: text
+    transform: scale(1.2)
+    cursor: pointer
 
         /////////*** menu ***///////////
 
@@ -152,10 +154,13 @@ p
     color: $check-color
 
 .checkback
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 38px
+    width: 38px
     background-color: #fff
-    padding: 0.2rem
-    border-radius: 50%
-    padding: 0.5rem    
+    border-radius: 50% 
     transform: rotate(180deg)
     transition-duration: 1.5s
 
@@ -166,26 +171,16 @@ p
 .logo-footer
     font-family: shrikhand, sans-serif
 
-.order
-    color: #fff
-    font-weight: bold
-
 button
-    background: linear-gradient($gradient)
-    width: 15rem
-    height: 3.5rem
-    border-radius: 2.5rem
-    border: none
-    cursor: pointer
-    font-size: 1rem
+    @include button-style
     margin: 2.5rem 0 3.2rem 0
-    box-shadow: 2px 5px 10px $secondary-color
 
 .button
     text-align: center
 
 button:hover
-    opacity: 0.9
+   transition: 1s
+   opacity: 0.7
 
         /////////*** footer ***////////////
 ul

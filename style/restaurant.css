@@ -94,19 +94,22 @@ header {
   right: 30px;
 }
 
-.restaurant-name .fas {
+.heart-visible {
   color: transparent;
+  opacity: 0;
+}
+
+.heart-visible:hover {
+  opacity: 1;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  opacity: 0;
-}
-
-.restaurant-name .fas:hover {
-  opacity: 1;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
 }
 
 .wrapper-menu {
@@ -226,10 +229,19 @@ p {
 }
 
 .checkback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 38px;
+  width: 38px;
   background-color: #fff;
-  padding: 0.2rem;
   border-radius: 50%;
-  padding: 0.5rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition-duration: 1.5s;
@@ -245,23 +257,18 @@ p {
   font-family: shrikhand, sans-serif;
 }
 
-.order {
-  color: #fff;
-  font-weight: bold;
-}
-
 button {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   width: 15rem;
-  height: 3.5rem;
-  border-radius: 2.5rem;
+  height: 3.2rem;
+  border-radius: 1.5rem;
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  -webkit-box-shadow: 5px 5px 4px darkgrey;
+          box-shadow: 5px 5px 4px darkgrey;
   margin: 2.5rem 0 3.2rem 0;
-  -webkit-box-shadow: 2px 5px 10px #fafafa;
-          box-shadow: 2px 5px 10px #fafafa;
 }
 
 .button {
@@ -269,7 +276,9 @@ button {
 }
 
 button:hover {
-  opacity: 0.9;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0.7;
 }
 
 ul {
