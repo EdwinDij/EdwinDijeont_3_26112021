@@ -330,8 +330,18 @@ ol {
           transition-duration: 0.5s;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
 .logo-footer {
   font-family: shrikhand, sans-serif;
+  margin-bottom: 0;
 }
 
 .info {
@@ -354,8 +364,12 @@ ol {
   }
 }
 
-.icon-footer {
-  margin-right: 1rem;
+.icon-footer-hands {
+  padding-right: 0.45rem;
+}
+
+.icon-footer-restaurant {
+  padding-right: 1rem;
 }
 
 .loader {
@@ -460,4 +474,4 @@ ol {
             transform: rotate(360deg);
   }
 }
-/*# sourceMappingURL=ohmyfood.css.map */
+/*# sourceMappingURL=Ohmyfood.css.map */

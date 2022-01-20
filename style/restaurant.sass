@@ -188,9 +188,17 @@ button:hover
     opacity: 0.9
 
         /////////*** footer ***////////////
-.icon-footer
-    margin-right: 1rem
+ul
+    padding: 0
+    margin: 0
     
+li
+    list-style: none
+
+.logo-footer
+    font-family: shrikhand, sans-serif
+    margin-bottom: 0
+
 .info
     background-color: #353535
     color: #fff
@@ -200,8 +208,16 @@ button:hover
     row-gap: 1rem
     @media (min-width:850px)
         text-align: center
- 
 
+.icon-footer-hands
+    padding-right: 0.45rem
+
+.icon-footer-restaurant
+    padding-right: 1rem
+
+
+    //** animation **//
+    
 @for $i from 1 through 10
     .delay-#{$i}
         animation: Appear 1s 0.1s*$i

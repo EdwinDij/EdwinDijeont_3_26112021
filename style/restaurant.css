@@ -272,8 +272,18 @@ button:hover {
   opacity: 0.9;
 }
 
-.icon-footer {
-  margin-right: 1rem;
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.logo-footer {
+  font-family: shrikhand, sans-serif;
+  margin-bottom: 0;
 }
 
 .info {
@@ -294,6 +304,14 @@ button:hover {
   .info {
     text-align: center;
   }
+}
+
+.icon-footer-hands {
+  padding-right: 0.45rem;
+}
+
+.icon-footer-restaurant {
+  padding-right: 1rem;
 }
 
 .delay-1 {
