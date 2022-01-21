@@ -102,9 +102,11 @@ button {
 }
 
 button:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.50s;
+  transition: 0.50s;
   opacity: 0.7;
+  -webkit-box-shadow: 4px 4px 6px #424242;
+          box-shadow: 4px 4px 6px #424242;
 }
 
 .functionpage {
@@ -335,12 +337,14 @@ span {
 
 .heart-visible:hover {
   opacity: 1;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
   cursor: pointer;
 }
 
@@ -350,8 +354,8 @@ span {
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
   cursor: pointer;
 }
 
@@ -499,4 +503,4 @@ li {
             transform: rotate(360deg);
   }
 }
-/*# sourceMappingURL=Ohmyfood.css.map */
+/*# sourceMappingURL=ohmyfood.css.map */
